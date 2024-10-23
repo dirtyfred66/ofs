@@ -21,6 +21,14 @@ ALTER TABLE `ofs_options`
 ALTER TABLE `ofs_options`
   MODIFY `option_id` bigint NOT NULL AUTO_INCREMENT;
 
+INSERT INTO `ofs_options` (`option_name`, `option_value`) VALUES
+  ('email', ''),
+  ('password', ''),
+  ('cookie_data', ''),
+  ('user_agent', ''),
+  ('user_id', ''),
+  ('x_bc', '');
+
 CREATE TABLE `ofs_posts` (
   `id` int NOT NULL,
   `posted` timestamp NULL DEFAULT NULL,
